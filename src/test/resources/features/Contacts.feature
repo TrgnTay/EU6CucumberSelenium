@@ -1,3 +1,4 @@
+@fail
 Feature: Contacts page
 
   Scenario:Default page number
@@ -45,7 +46,7 @@ Feature: Contacts page
       | lastname  | Schneider   |
     Then the user should be able to login
 
-  @wip
+@wip
   Scenario Outline: login as a given user <user>
     Given the user is on the login page
     When the user logs in using following credentials
